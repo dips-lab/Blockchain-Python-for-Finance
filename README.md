@@ -323,7 +323,7 @@ create_tx: This prepares the transaction offline, with the inputs of: sender pri
 
 ![Transaction1](Images/Transaction1.png)
 ![Transaction2](Images/Transaction2.png)
-![Transaction3](Images/Transaction3.png)
-![Transaction4](Images/Transaction4.png)
-![Transaction5](Images/Transaction5.png)
+![Transaction3](Images/transaction3.png)
+![Transaction4](Images/transaction4.png)
+![Transaction5](Images/transaction5.png)
 
