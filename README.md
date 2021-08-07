@@ -281,5 +281,49 @@ The following dependencies are required for this assignment and were likely alre
 
 * Be well commented with concise, relevant notes that other developers can understand. (10 points)
 
----
-© 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+# 1. INSTALLATION AND PROJECT SETUP:
+
+- Clone the hd-wallet-derive tool into the wallet folder and install it. Then, open terminal and perform the following steps, test that you can run the ./derive script properly and the output will be as shown in the images below
+
+![Installation1a](Images/Installation1a.png)
+![Installation1b](Images/Installation1b.png)
+
+
+# 2. Setup wallet.py and constants as well as generate mnemonics:
+After this, we create a file called wallet.py which will be our universal wallet script and in it we will import all constants. And in a separate file, constants.py, we will set the following constants:
+
+BTC = 'btc'
+ETH = 'eth'
+BTCTEST = 'btc-test'
+
+![Installation2a](Images/Installation2a.png)
+
+
+# 3. Derive the wallet keys
+
+- Create a function called derive_wallets.
+- Create a dictionary object called coins that uses the derive_wallets function to derive ETH and BTCTEST wallets.
+
+![derivekeys1](Images/derivekeys1.png)
+![derivekeys2](Images/derivekeys2.png)
+
+# 4. Transactions with Bitcoin Testnet:
+
+There are three functions, which are described below:
+
+priv_key_to_account: This reveals the public address based on the private key input.
+
+create_tx: This prepares the transaction offline, with the inputs of: sender private key, recipient address, amount, and coin (currency). When this function runs succesfully, it prints out a string with the sender address. For the BTC testnet network the output of this function is ready to broadcast, while ethereum transactions need an extra step to approval.
+
+send_tx: This function essentially broadcast the transaction to the corresponding cryptocurrency network. When this function runs succesfully, it prints out a message transaction successful along with the coin and the amount of the transaction.
+
+create_tx: This prepares the transaction offline, with the inputs of: sender private key, recipient address, amount, and coin (currency). When this function runs succesfully, it prints out a string with the sender address. For the BTC testnet network the output of this function is ready to broadcast, while ethereum transactions need an extra step to approval.
+
+
+
+![Transaction1](Images/Transaction1.png)
+![Transaction2](Images/Transaction2.png)
+![Transaction3](Images/Transaction3.png)
+![Transaction4](Images/Transaction4.png)
+![Transaction5](Images/Transaction5.png)
+
